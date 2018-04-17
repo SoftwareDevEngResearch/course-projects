@@ -61,7 +61,7 @@ in the field.
 
 #### Package Dependence
 
-I plan to use Numpy extensively.
+I plan to use Numpy and Matplotlib extensively.
 
 #### References
 
