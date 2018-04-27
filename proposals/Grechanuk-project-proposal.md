@@ -16,6 +16,13 @@ Machine Learning for Physics Simulations
  features. The predicted quantity for the machine learning algorithm can be any quantity of interest in the physics simulation, 
  so that the machine learning algorithm can begin to learn relationships of interest.
  
+ Once machine learning has been performed on a data set, feature ranking can be calculated to find the most important features
+ for predicting the quantity of interest to the machine learning algotihm. This can provide unique insights about the problem space.
+ An example applying this methodology is currently in review for publication. In that study the features are nuclear cross section 
+ sensitivities calculated with respect to k (the output of the physics simulation), and the predicted value is the error of the simulation.
+ Finding the important features to the machine learning model now shows what cross sections are important to predicting error, which can
+ be used to help identify sources of error in the problem space.
+ 
  
 
 
