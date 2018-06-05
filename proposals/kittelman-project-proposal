@@ -1,0 +1,45 @@
+ME599 Project Proposal
+John Kittelman
+
+For this term I propose a simulation tool which will be designed for use by the
+Global Formula Racing team.  This simulation tool will be a thermodynamic model
+of the current engine configuration which is a stock KTM 450 SXF.  This tool
+will have inputs of fuel type, fuel flow, air flow, cylinder geometry, intake
+and exhaust pressure, spark ignition and fuel injection timing, and engine
+speed.  The simulation should be a tool to optimize power and fuel efficiency.
+The limiting factor for these inputs is the air flow due to a rule require flow
+regulator.  This single the engine simulation will also include possible engine
+modifications that have been discussed by team.  These modifications are but not
+limited to, a turbo, changing piston heads and changing fuel type.
+
+The justification behind this code for GFR is based on the points gained in
+competition.  The competition which GFR competes in hold a design review where
+students must defend their design choses.  The simulation will add a quick and
+easy tool to justify design decisions in competition and in future years for the 
+team. The current method for justify any decision within the power-train is to run
+tests on the dynamometer (dyno) in the basement of Rogers.  This is slow and is 
+a cost to the team in gas and engine wear.   A simulation that is validated by dyno 
+testing data will be an important step in expediting thepower-train design process 
+for GFR.
+
+I am hoping to develop a tool like a LabVIEW where different modules can be
+chained together to form a complete system.  This would allow for future users
+of the software to have an easier time using/modifying the code for their needs.
+I will use Python's Class feature where I can initialize lets say the
+intake manifold with the required inputs and then run through the thermodynamic
+calculation. I expect that Numpy and Scipy and Matplotlib will be required to do 
+the simulation and represent the results.
+
+The theory which I will be basing my thermodynamic model will come mostly from
+Internal Combustion Engine Fundamentals by John Heywood.  Engine Modeling and
+Control: Modeling and Electronic Management of Internal Combustion Engines by
+Rolf Isermann will be used to develop the module setup to the simulation.
+The Isermann will help develop the structure of the simulation and the Heywood
+book will be used to make the computation of the each module.
+
+If time permits I would like to add a feature that would compare simulation
+results with the test data using the same input values.  This would allow for
+correction factors to be created and implemented into the code.  The current
+benchmark for any simulation ever used by GFR had an accuracy of plus/minus
+30%; however currently there is no simulation for the KTM 450.  I would like
+to shoot for an accuracy of within 10% of test values.
