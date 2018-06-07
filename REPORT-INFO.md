@@ -17,7 +17,9 @@ Your report should include the following sections (you can modify the titles as 
 There is no length requirement, but generally 5–15 pages would be appropriate for this amount of content. (Longer is not necessarily better.) 
 
 **Make sure you cite your software** as we talked about in class---use Zenodo to archive the final version of your software and then use the resulting DOI to cite. You can format the reference like this (replace elements with the specifics of your software: 
+
 > {Your name}. (2018) {Your software} v{version number} [software]. Zenodo. https://doi.org/xxxx/xxxxx
+
 or using BibTeX:
 ```TeX
 @misc{yoursoftware,
