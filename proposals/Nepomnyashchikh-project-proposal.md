@@ -7,7 +7,7 @@ the Earth's surface which are spread randomly. When drilling a well (e.g, geo-
 thermal or oil well), one can penetrate such a reservoir. Pressurized fluid then
 enters the drilling annulus where it mixes with the drilling fluid (drilling
 fluid is a fluid which is pumped through the drilling string into the drilling
-annulus to wash out the cuttings). That's how a two phase flow occur in the
+annulus to wash out the cuttings). That's how a two phase flow can occur in the
 annulus. Being highly pressurized, such a flow can damage the drilling facility
 and even kill drillers (the most prominent example is "Deep water horizon").
    Therefore, influxes need to be detected as early as possible. The smallest
@@ -17,8 +17,8 @@ chosen from the existing pool of multiphase flow models. The chosen model is
 called drift-flux model. It allows for quick computation and returns
 sufficiently accurate results [1].
    When modeling an influx, one faces a problem of phase occurrence/vanishing.
-It happens because an influx there is a single phase flow in the annulus. After
-the influx, there is a multiphase flow in the annulus.
+It happens because an influx happens, there is a single phase flow of drilling fluid in the annulus. After
+the influx occurs, there is a multiphase flow in the annulus.
    Drift-flux model's behavior in the event of phase occurrence/vanishing is not
 explored much. For example, drift-flux model is used for influx modeling in [2].
 But any exploration of appropriateness of its usage is not presented there.
@@ -43,8 +43,7 @@ transient drift-flux model was used and it was revealed that there are problems
 with single to two phase flow transition. Hence, it is necessary to find and fix
 that problems. It is the reason why the specified subject is chosen for the
 current project.
-   For the purposes of the current project, the code written for transient in-
-flux modeling will be rewritten for the case of steady flow. It will require
+   For the purposes of the current project, the code written for transient influx modeling will be rewritten for the case of steady flow. It will require
 recreation of the numerical scheme from the beginning (transient drift-flux
 model is a systme of PDEs, whereas steady drift-flux model is a system of ODEs).
 Moreover, steady drift-flux model doesn't allow for influx modeling - it only
@@ -61,7 +60,7 @@ flow).
 matplotlib, pyqt5, numpy, scipy and math. Matplotlib will be used for plotting
 results. But it proved to be very slow in some cases of wellbore flows modeling.
 If such an issue were encountered, the pyqtgraph function of the pyqt5 package
-will be used. It allows for relatively quick plotting of big sets of data.
+would be used. It allows for relatively quick plotting of big sets of data.
    The resultant code can be used by researches who work with drift-flux models
 to reliably model either a single or a two phase flow in a vertical pipe using
 drift-flux model. Still, its main goal is to give an insight on how to make
