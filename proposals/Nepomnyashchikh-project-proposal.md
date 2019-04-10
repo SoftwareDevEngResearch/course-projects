@@ -7,15 +7,15 @@ the Earth's surface which are spread randomly. When drilling a well (e.g, geo-
 thermal or oil well), one can penetrate such a reservoir. Pressurized fluid then
 enters the drilling annulus where it mixes with the drilling fluid (drilling
 fluid is a fluid which is pumped through the drilling string into the drilling
-annulus to wash out the cuttings). That's how a two phase flow occur in the an-
-nulus. Being highly pressurized, such a flow can damage the drilling facility
+annulus to wash out the cuttings). That's how a two phase flow occur in the
+annulus. Being highly pressurized, such a flow can damage the drilling facility
 and even kill drillers (the most prominent example is "Deep water horizon").
    Therefore, influxes need to be detected as early as possible. The smallest
 detection time can be achieved by real time multiphase flow modeling. Hence, a
 fast and reasonably accurate mathematical model of multiphase flow should be
 chosen from the existing pool of multiphase flow models. The chosen model is
-called drift-flux model. It allows for quick computation and returns sufficient-
-ly accurate results [1].
+called drift-flux model. It allows for quick computation and returns
+sufficiently accurate results [1].
    When modeling an influx, one faces a problem of phase occurrence/vanishing.
 It happens because an influx there is a single phase flow in the annulus. After
 the influx, there is a multiphase flow in the annulus.
@@ -31,28 +31,29 @@ it was chosen to be explored in the project.
 to be a case flow for this project.
    Prior to the simulation, a mathematical
 analysis of the model behavior in the event of gas phase vanishing will be done.
-Revealed issues, if any, will be recorded. Ways of fixing the issues will be de-
-veloped.
+Revealed issues, if any, will be recorded. Ways of fixing the issues will be
+developed.
    Then simulation will be done. The revealed issues will be proven. Then the
-the ways of issues fixing will be tried and the most effective way will be cho-
-sen. In case of no issues, simulation will be done to prove that the model can
-handle the event of gaseous phase vanishing.
+the ways of issues fixing will be tried and the most effective way will be
+chosen. In case of no issues, simulation will be done to prove that the model
+can handle the event of gaseous phase vanishing.
    This project is based on the research work done by the author and devoted to
-transient influx modeling. During the work on transient influx modeling, a tran-
-sient drift-flux model was used and it was revealed that there are problems with
-single to two phase flow transition. Hence, it is necessary to find and fix that
-problems. It is the reason why the specified subject is chosen for the current
-project.
+transient influx modeling. During the work on transient influx modeling, a
+transient drift-flux model was used and it was revealed that there are problems
+with single to two phase flow transition. Hence, it is necessary to find and fix
+that problems. It is the reason why the specified subject is chosen for the
+current project.
    For the purposes of the current project, the code written for transient in-
-flux modeling will be rewritten for the case of steady flow. It will require re-
-creation of the numerical scheme from the beginning (transient drift-flux model
-is a systme of PDEs, whereas steady drift-flux model is a system of ODEs). More-
-over, steady drift-flux model doesn't allow for influx modeling - it only allows
-for manual altering between two and single phase flows. Hence, influx modeling
-part will also be removed from the original code.
+flux modeling will be rewritten for the case of steady flow. It will require
+recreation of the numerical scheme from the beginning (transient drift-flux
+model is a systme of PDEs, whereas steady drift-flux model is a system of ODEs).
+Moreover, steady drift-flux model doesn't allow for influx modeling - it only
+allows for manual altering between two and single phase flows. Hence, influx
+modeling part will also be removed from the original code.
    Intended software will take as inputs flow parameters at the bottom of the
-pipe (pressure, gas phase density, gas phase velocity and gas phase concentra-
-tion) and will return as outputs distribution of that parameters along the pipe.
+pipe (pressure, gas phase density, gas phase velocity and gas phase
+concentration) and will return as outputs distribution of that parameters along
+the pipe.
    The primary characteristic of the intended software will be its ability to
 take as input zero gaseous phase concentration (i.e., to model a singe phase
 flow).
@@ -67,10 +68,10 @@ drift-flux model. Still, its main goal is to give an insight on how to make
 transient drift-flux model be valid for both single and two phase flows.
 
 # **References**
-1. Aarsnes, U. J. F. (2016). Modeling of two-phase flow for estimation and
-   control of drilling operations. PhD thesis, Norwegian University of Science
+1. Aarsnes, U. J. F. (2016). *Modeling of two-phase flow for estimation and
+   control of drilling operations.* PhD thesis, Norwegian University of Science
    and Technology.​
 2. Nikoofard, A., Aarsnes, U. J. F., Johansen, T. A., Kaasa, G. (2017). State
    and parameter estimation of a drift-flux model for under-balanced drilling
-   operations. In *IEEE Transactions on Control Systems Technology*, pages 2000
-   - 2009.
+   operations. In *IEEE Transactions on Control Systems Technology*,
+   pages 2000-2009.
